@@ -28,3 +28,7 @@ INSERT INTO tb_resource ( title, description, position, imgURI, type, offer_id) 
 INSERT INTO tb_section (title, description, position, imgURI, resource_id, prerequisite_id) VALUES ('Capitulo 1 - introducao', 'neste capitulo vamos comecar', 1, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 1, null);
 INSERT INTO tb_section (title, description, position, imgURI, resource_id, prerequisite_id) VALUES ('Capitulo 2', 'neste capitulo vamos continuar', 2, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 1, 1);
 INSERT INTO tb_section (title, description, position, imgURI, resource_id, prerequisite_id) VALUES ('Capitulo 3', 'neste capitulo vamos finalizar', 3, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 1, 2);
+
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, Only_Update) VALUES (1,1, TIMESTAMP WITH TIME ZONE '2020-11-20T13:00:00Z', null, true, false);
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, Only_Update) VALUES (2,1, TIMESTAMP WITH TIME ZONE '2020-11-20T13:00:00Z', null, true, false);
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, Only_Update) VALUES (3,1, TIMESTAMP WITH TIME ZONE '2020-11-20T13:00:00Z', null, true, false);
