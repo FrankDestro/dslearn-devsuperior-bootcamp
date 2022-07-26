@@ -35,9 +35,10 @@ public abstract class Lesson implements Serializable {
 	private Section section;
 
 	@ManyToMany
-	@JoinTable(name = "tb_lesson_done", // terceira tabela para referencia entre das outras tabelas
+	@JoinTable(name = "tb_lessons_done", // terceira tabela para referencia entre das outras tabelas
 			joinColumns = @JoinColumn(name = "lesson_id"), // chave estrangeira da classe que estou.
-			inverseJoinColumns = { @JoinColumn(name = "user_id"), // ManyToMany de uma tabela com chave composta.
+			inverseJoinColumns = {
+					@JoinColumn(name = "user_id"), // ManyToMany de uma tabela com chave composta.
 					@JoinColumn(name = "offer_id") // tabela enrollment
 			})
 	private Set<Enrollment> enrollmentsDone = new HashSet<>();
