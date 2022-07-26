@@ -23,4 +23,8 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 
 INSERT INTO tb_resource (title, description, position, imgURI, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 1, 1);
 INSERT INTO tb_resource (title, description, position, imgURI, type, offer_id) VALUES ('Forum', 'tire suas duvidas', 2, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 2, 1);
-INSERT INTO tb_resource (title, description, position, imgURI, type, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma', 3, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 0, 1);
+INSERT INTO tb_resource ( title, description, position, imgURI, type, offer_id) VALUES ('Lives', 'Lives exclusivas para a turma', 3, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 0, 1);
+
+INSERT INTO tb_section (title, description, position, imgURI, resource_id, prerequisite_id) VALUES ('Capitulo 1 - introducao', 'neste capitulo vamos comecar', 1, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 1, null);
+INSERT INTO tb_section (title, description, position, imgURI, resource_id, prerequisite_id) VALUES ('Capitulo 2', 'neste capitulo vamos continuar', 2, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 1, 1);
+INSERT INTO tb_section (title, description, position, imgURI, resource_id, prerequisite_id) VALUES ('Capitulo 3', 'neste capitulo vamos finalizar', 3, 'https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg', 1, 2);
